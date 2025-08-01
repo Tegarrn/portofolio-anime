@@ -23,7 +23,7 @@ const loader = new GLTFLoader();
 loader.register((parser) => new VRMLoaderPlugin(parser)); // Menggunakan plugin VRM
 
 loader.load(
-    '../public/model.vrm', // Path ke model Anda
+    '/public/model.vrm', // Path ke model Anda
     (gltf) => {
         vrm = gltf.userData.vrm; // Mengambil data VRM
         scene.add(vrm.scene); // Menambahkan model ke scene
